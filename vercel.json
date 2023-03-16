@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "index.js",
-        "use": "@now/node"
+        "use": "@vercel/node"
       }
     ],
     "routes": [
@@ -11,5 +11,12 @@
         "src": "/(.*)",
         "dest": "index.js"
       }
-    ]
+    ],
+    "env": {
+      "MONGO_USERNAME": "@MONGO_USERNAME",
+      "MONGO_PASSWORD": "@MONGO_PASSWORD",
+      "MONGO_SERVER": "@MONGO_SERVER",
+      "MONGO_TUNE_DB": "@MONGO_TUNE_DB"
+    }
   }
+  
