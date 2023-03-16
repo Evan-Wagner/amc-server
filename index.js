@@ -24,3 +24,5 @@ app.get('/', (req, res) => {
 app.use('/api', tuneRouter);
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
+
+export default app;
