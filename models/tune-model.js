@@ -4,8 +4,9 @@ const Schema = mongoose.Schema;
 const Tune = new Schema(
     {
         name: { type: String, required: true },
-        streamingUrls: { type: [[String, String]], required: true }, // Updated to store tuples
+        streamingUrls: { type: [[String, String]], required: true },
         endorsements: { type: [String], required: true },
+        description: { type: String, required: true },
     },
     { timestamps: true },
 );

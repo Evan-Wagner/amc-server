@@ -55,6 +55,7 @@ const updateTune = async (req, res) => {
         tune.name = body.name
         tune.streamingUrls = body.streamingUrls
         tune.endorsements = body.endorsements
+        tune.description = body.description
 
         await tune.save()
 
