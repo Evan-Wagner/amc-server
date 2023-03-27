@@ -5,6 +5,8 @@ import cors from 'cors';
 import db from './dbs/tune-db.js';
 import tuneRouter from './routes/tune-router.js';
 
+console.log('test');
+
 const app = express();
 const apiPort = 3000;
 
