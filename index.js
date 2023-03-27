@@ -8,7 +8,7 @@ import tuneRouter from './routes/tune-router.js';
 console.log('test');
 
 const app = express();
-const apiPort = 3000;
+const apiPort = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
