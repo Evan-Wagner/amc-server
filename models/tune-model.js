@@ -5,8 +5,8 @@ const Tune = new Schema(
     {
         name: { type: String, required: true },
         streamingUrls: { type: [[String, String]], required: true },
-        endorsements: { type: [String], required: true },
-        description: { type: String, required: true },
+        endorsements: { type: [String], required: false },
+        description: { type: String, required: false },
     },
     { timestamps: true },
 );

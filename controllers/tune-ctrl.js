@@ -67,7 +67,7 @@ const updateTune = async (req, res) => {
     } catch (error) {
         return res.status(404).json({
             error,
-            message: 'Tune not updated!',
+            message: `Tune not updated — missing fields: ${Object.keys(error.errors)}.`,
         })
     }
 }
