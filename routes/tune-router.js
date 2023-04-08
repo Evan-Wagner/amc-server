@@ -9,10 +9,10 @@ import {
     getTuneById,
 } from '../controllers/tune-ctrl.js';
 
-router.post('/tune', createTune);
-router.put('/tune/:id', updateTune);
-router.delete('/tune/:id', deleteTune);
-router.get('/tune/:id', getTuneById);
-router.get('/tunes', getTunes);
+router.post('/', createTune);
+router.put('/:id', updateTune);
+router.delete('/:id', deleteTune);
+router.get('/:id', getTuneById);
+router.get('/', getTunes);
 
 export default router;

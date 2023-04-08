@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.use('/api', tuneRouter);
+app.use('/tunes', tuneRouter);
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
 
