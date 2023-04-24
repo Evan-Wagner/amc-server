@@ -53,7 +53,8 @@ const updateTune = async (req, res) => {
         }
 
         tune.name = body.name
-        tune.streamingUrls = body.streamingUrls
+        tune.tracks = body.tracks
+        tune.lists = body.lists
         tune.endorsements = body.endorsements
         tune.description = body.description
 
